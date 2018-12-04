@@ -17,7 +17,9 @@ The following table shows the experiment results. The experiments with batch siz
 | Yes       | Random                    | No                   | 256        | 20     | 2.66     |
 | Yes       | Random                    | No                   | 64         | 18     | 2.51     |
 | Yes       | Glove                     | Yes                  | 32         | 6      | 2.36     |
-| Yes       | Glove                     | Yes                  | 16         | 4      | **2.29**
+| Yes       | Glove                     | Yes                  | 16         | 4      | **2.29** |
+| Yes       | Glove                     | Yes                  | 8          | 4      | 2.34     |
+| No        | Glove                     | Yes                  | 32         | 3      | 2.56     |
 
 With batch size = 256:
 
@@ -31,4 +33,4 @@ With batch size = 256:
 | **Trainable**     | 2.42   | 2.41  |
 | **Not trainable** | 2.51   | 2.52  |
 
-The experiments suggest that using pre-trained Glove embeddings do not help. Also, it seems that a smaller batch size gives better results.
+The experiments suggest that using pre-trained Glove embeddings do not help. Also, it seems that smaller batch sizes give better results.
